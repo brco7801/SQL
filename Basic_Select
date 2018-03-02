@@ -23,9 +23,10 @@ select city,state from station
 select distinct city from station where (ID % 2) = 0
 
 #Q9
-
+select count(city)-count(distinct city) from station
 
 #Q10
+
 
 #Q11
 
