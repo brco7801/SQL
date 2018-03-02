@@ -1,7 +1,0 @@
-#Q1
-SELECT * FROM CITY WHERE COUNTRYCODE="USA" AND POPULATION>100000
-
-#Q2
-select name from CITY where population>120000 and countrycode="USA"
-
-#Q3

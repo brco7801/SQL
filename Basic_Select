@@ -1,0 +1,19 @@
+#Q1
+SELECT * FROM CITY WHERE COUNTRYCODE="USA" AND POPULATION>100000
+
+#Q2
+select name from CITY where population>120000 and countrycode="USA"
+
+#Q3
+select * from city
+
+#Q4
+select * from city where ID=1661
+
+#Q5
+select * from city where countrycode="JPN"
+
+#Q6
+select name from city where countrycode="JPN"
+
+#Q7
