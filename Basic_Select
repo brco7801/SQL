@@ -26,24 +26,35 @@ select distinct city from station where (ID % 2) = 0
 select count(city)-count(distinct city) from station
 
 #Q10
-
+select city, length(city) from station order by length(city),city limit 1;
+select city, length(city) from station order by length(city) desc limit 1;
 
 #Q11
+select distinct city from station where (city like 'a%' or city like 'e%' or city like 'i%' or city like 'o%' or city like 'u%')
 
 #Q12
+select distinct city from station where (city like '%a' or city like '%e' or city like '%i' or city like '%o' or city like '%u')
 
 #Q13
+SELECT DISTINCT CITY FROM STATION WHERE (CITY LIKE 'a%' OR CITY LIKE 'e%' OR CITY LIKE 'i%' OR CITY LIKE 'o%' OR CITY LIKE 'u%') AND (CITY LIKE '%a' OR CITY LIKE '%e' OR CITY LIKE '%i' OR CITY LIKE '%o' OR CITY LIKE '%u');
 
 #Q14
+select distinct city from station where city not like 'a%' and city not like 'e%' and city not like 'i%' and city not like 'o%' and city not like 'u%' order by city
 
 #Q15
+select distinct city from station where city not like '%a' and city not like '%e' and city not like '%i' and city not like '%o' and city not like '%u' order by city
 
 #Q16
+select distinct city from station where (city not like '%a' and city not like '%e' and city not like '%i' and city not like '%o' and city not like '%u') or (city not like 'a%' and city not like 'e%' and city not like 'i%' and city not like 'o%' and city not like 'u%') order by city
 
 #Q17
+select distinct city from station where (city not like '%a' and city not like '%e' and city not like '%i' and city not like '%o' and city not like '%u') and (city not like 'a%' and city not like 'e%' and city not like 'i%' and city not like 'o%' and city not like 'u%') order by city
 
 #Q18
+select name from students where marks>75 order by RIGHT(name, 3), id asc
 
 #Q19
+select name from employee order by name
 
 #Q20
+select name from employee where salary>2000 and months<10 order by employee_id asc
