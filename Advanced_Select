@@ -2,3 +2,9 @@
 select if(a=b and b=c, "Equilateral", if(a+b<=c or a+c<=b or a+c<=b, "Not A Triangle", if(a=b or a=c or b=c, "Isosceles", "Scalene"))) from triangles
 
 #Q2
+select concat(name, '(', SUBSTRING(Occupation, 1, 1), ')') from occupations order by name;
+select concat('There are a total of ', count(*), ' ', lower(Occupation), 's.') from occupations group by occupation order by count(*) asc, occupation asc;
+
+#Q3
+#Q4
+#Q5
