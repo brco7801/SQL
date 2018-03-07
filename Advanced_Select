@@ -1,1 +1,4 @@
+#Q1
+select if(a=b and b=c, "Equilateral", if(a+b<=c or a+c<=b or a+c<=b, "Not A Triangle", if(a=b or a=c or b=c, "Isosceles", "Scalene"))) from triangles
 
+#Q2
